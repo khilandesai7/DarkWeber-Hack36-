@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #FFCE00;
+    --secondary: #FE4880;
+    --dark: #212121;
+    --light: #F3F3F3;
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+#navbar{
+    display: flex;
+    align-items: baseline;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul{
+    display: contents;
+    font: caption;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    padding: 4px 10px;
+    font: bold;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('iitmandi2.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.91;
+}
+
+.Table{
+    background-color:blanchedalmond;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    border-collapse: separate;
+    background-size: 100%;
+    border-spacing:0 1px ;
+    text-align: center;
+    margin-left:auto;margin-right:auto;
+    text-decoration: none;
+    margin-top: 25px;
+    
+}
+th{background-color: #4287f5;
+color: white;
+}
+th,
+td {
+width: 150px;
+text-align: center;
+border: 1px solid black;
+padding: 10px;
+}
+h2 {
+color: black;
+}
+
+.Table thead{
+    background-color: blue;
+
+}
+ 
+ .content-table{ 
+     border-collapse: collapse; 
+     margin-left: auto;
+     margin-right: auto;
+     margin:25px 0; 
+     font-size:0.9em; 
+     min-width: 600px; 
+     
+ } 
+ .content-table thead tr{ 
+     background-color: rgb(255, 0, 0); 
+     color: rgb(255, 255, 255); 
+     text-align: left; 
+     font-weight: bold;
+ } 
+ .content-table td, .content-table th 
+ { padding :12px 15px } 
+ .content-table tbody tr{ 
+     border-bottom: 1px solid #dddddd;
+ } 
+ .content-table tbody tr:nth-of-type(even) {
+ background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+border-bottom: 2px solid #d41811;
+}
+
+.content-table tbody tr.active-row {
+font-weight: bold;
+color: #ce0a0a;
+}
+
+
+
+.box{
+    /* height: 500vh; */
+    margin: 0;
+    /* width: 350px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.box .container{
+    display: block;
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient(to top left, var(--primary), var(--secondary));
+    margin: 10px 25px;
+    border-radius: 12px;
+    transition: 0.5s;
+    border: 2px solid black;
+}
+
+.container:hover{
+    transform: scale(1.09);
+}
+
+.details{
+    text-align: center;
+    display: block;
+    color: black;
+}
+.photo img{
+    height: 175px;
+    margin: 10px 33px;
+}
+
+
+.km{ float: left;
+    display: flex;
+    background-color: rgb(215, 236, 250);
+    width: 600px;
+    border: 1px solid rgb(2, 0, 128);
+    padding: 25px;
+    margin: 25px;
+}
+.k{ float: right;
+    display: flex;
+    background-color: rgb(215, 236, 250);
+    width: 600px;
+    border: 1px solid rgb(2, 0, 128);
+    padding: 25px;
+    margin: 25px;
+}
+.AboutR {float: right;
+    background-color: rgb(215, 236, 250);
+    /* width: 1000px; */
+    /* border: 1px solid rgb(2, 0, 128); */
+    padding: 25px;
+    margin: 25px;
+}
+.AboutK {float: left;
+    background-color: rgb(215, 236, 250);
+    /* width: 1000px; */
+    /* border: 1px solid rgb(2, 0, 128); */
+    padding: 25px;
+    margin: 25px;
+}
+.AboutM {float: left;
+    background-color: rgb(215, 236, 250);
+    /* width: 1000px; */
+    /* border: 1px solid rgb(2, 0, 128); */
+    padding: 25px;
+    margin: 25px;
+}
